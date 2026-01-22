@@ -1,27 +1,88 @@
-# Diretórios internos do processo
+# ==========================================================
+# exclude.txt
+# Descrição:
+#   Arquivos e diretórios excluídos da sincronização rsync
+# Ambiente: Produção
+# Uso: Rsync Daemon / Rsync via SSH
+# ==========================================================
+
+# --------------------------
+# Diretórios de controle
+# --------------------------
+
 /delete/
 /zip/
 /logs/
 
-# Temporários
-*.tmp
-*.swp
-*~
+# --------------------------
+# Arquivos temporários
+# --------------------------
 
-# Cache / sessão
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+*.bak
+
+# --------------------------
+# Cache / Sessão
+# --------------------------
+
 /cache/
 /tmp/
 /sessions/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
 
-# Logs
+# --------------------------
+# Logs de aplicação
+# --------------------------
+
 *.log
+/log/
+/logs/
 
-# Versionamento
+# --------------------------
+# Uploads temporários
+# --------------------------
+
+/uploads/tmp/
+
+# --------------------------
+# Versionamento / IDE
+# --------------------------
+
 .git/
+.gitignore
+.svn/
+.hg/
+
 .idea/
 .vscode/
 
-# Segurança
+# --------------------------
+# Sistema operacional
+# --------------------------
+
+.DS_Store
+Thumbs.db
+
+# --------------------------
+# Segurança / Dados sensíveis
+# --------------------------
+
 .env
+.env.*
 *.key
 *.pem
+*.crt
+*.pfx
+
+# --------------------------
+# Comentários finais
+# --------------------------
+# Ajustar conforme a aplicação
+# Testar sempre com --dry-run
