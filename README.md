@@ -65,7 +65,7 @@ O arquivo (exemplo) está versionado no repositório e documentado na Wiki.
 /usr/local/exclude.txt
 ```
 📍 Exemplo de Arquivo
-[📄 Exclude.txt](/docs/exclude.txt)
+- [📄 Exclude.txt](/docs/exclude.txt)
 
 ## 🔐 Segurança & Compliance
 
