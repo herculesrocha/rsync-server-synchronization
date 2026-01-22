@@ -13,6 +13,7 @@ O projeto contempla:
 - Compactação e retenção
 - Logs auditáveis
 - Monitoramento via Zabbix
+
 Neste ambienete não foi cogitado o Rsync Daemon, mesmo com a boa performace, foi levado em conta a falta de Criptografia e uso desse recurso fora do ambiente interno.
 ---
 
