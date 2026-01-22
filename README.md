@@ -64,10 +64,8 @@ O arquivo (exemplo) está versionado no repositório e documentado na Wiki.
 ```bash
 /usr/local/exclude.txt
 ```
-📍 Arquivo no repositório
-[📄 Exclude.txt – Wiki](../../wiki/Exclude.txt)
-[📄 exclude.txt](/docs/exclude.txt)
-../../wiki/Exclude.txt
+📍 Exemplo de Arquivo
+[📄 Exclude.txt](/docs/exclude.txt)
 
 ## 🔐 Segurança & Compliance
 
