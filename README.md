@@ -8,13 +8,13 @@ Projeto utilizado em abiente de produção, para sincronização de arquivos ent
 - Boas práticas
 
 O projeto contempla:
-- Sincronização via **rsync daemon**
 - Sincronização via **SSH (sem daemon)**
 - Backup automático de arquivos deletados
 - Compactação e retenção
 - Logs auditáveis
 - Monitoramento via Zabbix
 
+Neste ambienete não foi cogitado o Rsync Daemon, mesmo com a boa performace, foi levado em conta a falta de Criptografia e uso desse recurso fora do ambiente interno.
 ---
 
 ## 📌 Arquitetura
@@ -33,20 +33,16 @@ Server Principal → Server Secundário
 
 A documentação detalhada está disponível na **Wiki do projeto**:
 
-[runbook-rsync](/rsync-server-synchronization/wiki)
+👉[runbook-rsync](https://github.com/herculesrocha/rsync-server-synchronization/wiki/Runbook-%E2%80%93-Sincroniza%C3%A7%C3%A3o-de-Arquivos-com-Rsync-(FreeBSD))
 
-👉 **https://github.com/SEU-USUARIO/rsync-intranet-freebsd/wiki**
-
-Conteúdo da Wiki:
+ Conteúdo da Wiki:
 - Instalação
-- Configuração rsync daemon
-- Configuração rsync via SSH
+- Configuração rsync
 - Scripts comentados
 - Cron
 - Monitoramento
 - Troubleshooting
 - Restore
-- Conformidade ISO / ITIL
 
 ---
 
@@ -54,7 +50,6 @@ Conteúdo da Wiki:
 
 | Script | Descrição |
 |-----|-----------|
-| `rsync-daemon.sh` | Sincronização via rsync daemon |
 | `rsync-ssh.sh` | Sincronização via SSH (sem daemon) |
 
 ---
