@@ -33,7 +33,7 @@ Server Principal → Server Secundário
 
 A documentação detalhada está disponível na **Wiki do projeto**:
 
-👉[runbook-rsync](https://github.com/herculesrocha/rsync-server-synchronization/wiki/Runbook-%E2%80%93-Sincroniza%C3%A7%C3%A3o-de-Arquivos-com-Rsync-(FreeBSD))
+👉[runbook-rsync](https://github.com/herculesrocha/rsync-server-synchronization/wiki)
 
  Conteúdo da Wiki:
 - Instalação
@@ -53,6 +53,21 @@ A documentação detalhada está disponível na **Wiki do projeto**:
 | `rsync-ssh.sh` | Sincronização via SSH (sem daemon) |
 
 ---
+
+## 📄 Arquivo de Exclusões (`exclude.txt`)
+
+Este projeto utiliza um arquivo de exclusões do **rsync** para evitar a sincronização de arquivos temporários, logs, caches e dados sensíveis.
+
+O arquivo (exemplo) está versionado no repositório e documentado na Wiki.
+
+📍 **Local padrão no servidor**
+```bash
+/usr/local/exclude.txt
+```
+📍 Arquivo no repositório
+[📄 Exclude.txt – Wiki](../../wiki/Exclude.txt)
+[📄 exclude.txt](/docs/exclude.txt)
+../../wiki/Exclude.txt
 
 ## 🔐 Segurança & Compliance
 
