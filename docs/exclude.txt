@@ -1,0 +1,27 @@
+# Diretórios internos do processo
+/delete/
+/zip/
+/logs/
+
+# Temporários
+*.tmp
+*.swp
+*~
+
+# Cache / sessão
+/cache/
+/tmp/
+/sessions/
+
+# Logs
+*.log
+
+# Versionamento
+.git/
+.idea/
+.vscode/
+
+# Segurança
+.env
+*.key
+*.pem
