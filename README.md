@@ -33,7 +33,7 @@ Server Principal → Server Secundário
 
 A documentação detalhada está disponível na **Wiki do projeto**:
 
-[runbook-rsync](/rsync-server-synchronization/wiki/runbook-rsync.md)
+[runbook-rsync](/rsync-server-synchronization/wiki)
 
 👉 **https://github.com/SEU-USUARIO/rsync-intranet-freebsd/wiki**
 
